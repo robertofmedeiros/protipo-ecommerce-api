@@ -1,24 +1,24 @@
 CREATE UNIQUE INDEX IF NOT EXISTS index_cod_prod ON public.produtos USING btree (codigo_produto) WHERE (deleted_at IS NULL);
 
 INSERT INTO public.produtos
-(id, codigo_produto, descricao, imagem_grande, imagem_pequena, nome, categoria)
-VALUES(1, 'PRO202401', 'Produto de teste 1', 'https://cdn.pixabay.com/photo/2013/11/24/11/10/lab-217043_1280.jpg', 'https://cdn.pixabay.com/photo/2013/11/24/11/10/lab-217043_1280.jpg', 'Produto 1', 'BAZAR') ON conflict DO nothing;
+(codigo_produto, descricao, imagem_grande, imagem_pequena, nome, categoria)
+VALUES('PRO202401', 'Produto de teste 1', 'https://cdn.pixabay.com/photo/2013/11/24/11/10/lab-217043_1280.jpg', 'https://cdn.pixabay.com/photo/2013/11/24/11/10/lab-217043_1280.jpg', 'Produto 1', 'BAZAR') ON conflict DO nothing;
 
 INSERT INTO public.produtos
-(id, codigo_produto, descricao, imagem_grande, imagem_pequena, nome, categoria)
-VALUES(2, 'PRO202402', 'Produto de teste 2', 'https://cdn.pixabay.com/photo/2017/06/28/10/53/board-2450236_1280.jpg', 'https://cdn.pixabay.com/photo/2017/06/28/10/53/board-2450236_1280.jpg', 'Produto 2', 'BAZAR') ON conflict DO nothing;
+(codigo_produto, descricao, imagem_grande, imagem_pequena, nome, categoria)
+VALUES('PRO202402', 'Produto de teste 2', 'https://cdn.pixabay.com/photo/2017/06/28/10/53/board-2450236_1280.jpg', 'https://cdn.pixabay.com/photo/2017/06/28/10/53/board-2450236_1280.jpg', 'Produto 2', 'BAZAR') ON conflict DO nothing;
 
 INSERT INTO public.produtos
-(id, codigo_produto, descricao, imagem_grande, imagem_pequena, nome, categoria)
-VALUES(3, 'PRO202403', 'Produto de teste 3', 'https://cdn.pixabay.com/photo/2017/06/28/10/53/board-2450236_1280.jpg', 'https://cdn.pixabay.com/photo/2017/06/28/10/53/board-2450236_1280.jpg', 'Produto 3', 'ELETRO') ON conflict DO nothing;
+(codigo_produto, descricao, imagem_grande, imagem_pequena, nome, categoria)
+VALUES('PRO202403', 'Produto de teste 3', 'https://cdn.pixabay.com/photo/2017/06/28/10/53/board-2450236_1280.jpg', 'https://cdn.pixabay.com/photo/2017/06/28/10/53/board-2450236_1280.jpg', 'Produto 3', 'ELETRO') ON conflict DO nothing;
 
 INSERT INTO public.produtos
-(id, codigo_produto, descricao, imagem_grande, imagem_pequena, nome, categoria)
-VALUES(4, 'PRO202404', 'Produto de teste 4', 'https://cdn.pixabay.com/photo/2017/10/05/21/45/laboratory-2821207_1280.jpg', 'https://cdn.pixabay.com/photo/2017/10/05/21/45/laboratory-2821207_1280.jpg', 'Produto 4', 'ELETRO') ON conflict DO nothing;
+(codigo_produto, descricao, imagem_grande, imagem_pequena, nome, categoria)
+VALUES('PRO202404', 'Produto de teste 4', 'https://cdn.pixabay.com/photo/2017/10/05/21/45/laboratory-2821207_1280.jpg', 'https://cdn.pixabay.com/photo/2017/10/05/21/45/laboratory-2821207_1280.jpg', 'Produto 4', 'ELETRO') ON conflict DO nothing;
 
 INSERT INTO public.produtos
-(id, codigo_produto, descricao, imagem_grande, imagem_pequena, nome, categoria)
-VALUES(6, 'PRO202405', 'Produto de teste 5', 'https://cdn.pixabay.com/photo/2014/04/05/11/39/read-316508_1280.jpg', 'https://cdn.pixabay.com/photo/2014/04/05/11/39/read-316508_1280.jpg', 'Produto 5', 'CASA_BANHO') ON conflict DO nothing;
+(codigo_produto, descricao, imagem_grande, imagem_pequena, nome, categoria)
+VALUES('PRO202405', 'Produto de teste 5', 'https://cdn.pixabay.com/photo/2014/04/05/11/39/read-316508_1280.jpg', 'https://cdn.pixabay.com/photo/2014/04/05/11/39/read-316508_1280.jpg', 'Produto 5', 'CASA_BANHO') ON conflict DO nothing;
 
 CREATE UNIQUE INDEX IF NOT EXISTS index_prod_precos ON public.produtos_precos USING btree (produtos_id) WHERE (deleted_at IS NULL);
 
