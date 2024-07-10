@@ -2,6 +2,6 @@ server:
   port: 8080
 spring:
   datasource:
-    url: jdbc:postgresql://dpg-cojqc2ocmk4c73c15ijg-a:5432/ecommerce_e92k
-    password: jCoJzCYQ42s9GrM2rMewPqWk2TYpKOR9
-    username: ecommerce_e92k_user
+    url: jdbc:postgresql://dpg-cq7gnp2ju9rs73a5r1j0-a:5432/prototipo_ecommerce
+    password: JCJ7ZB8Z5zykBzjcevBadf73MfLWFNcC
+    username: prototipo_ecommerce_user
